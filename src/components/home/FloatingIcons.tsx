@@ -13,7 +13,7 @@ const icons = [
   { Icon: SiPython, color: '#3776AB', x: '85%', y: '15%', delay: 0.5 },
   { Icon: SiTypescript, color: '#3178C6', x: '75%', y: '70%', delay: 1 },
   { Icon: SiFastapi, color: '#009688', x: '15%', y: '75%', delay: 1.5 },
-  { Icon: SiGithub, color: '#F8FAFC', x: '50%', y: '10%', delay: 0.8 },
+  { Icon: SiGithub, color: 'var(--color-text-primary)', x: '50%', y: '10%', delay: 0.8 },
   { Icon: FaJava, color: '#ED8B00', x: '90%', y: '45%', delay: 1.2 },
   { Icon: FaBrain, color: '#8B5CF6', x: '5%', y: '45%', delay: 0.3 },
 ]

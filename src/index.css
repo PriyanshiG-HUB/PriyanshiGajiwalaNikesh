@@ -11,6 +11,64 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+html.light {
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-primary: #0284C7;
+  --color-secondary: #7C3AED;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+}
+
+/* Light mode utility overrides for transparent elements and borders */
+html.light .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .border-white\/5 {
+  border-color: rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.03) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+html.light .hover\:bg-white\/5:hover {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .hover\:bg-white\/10:hover {
+  background-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .bg-surface\/40 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+html.light .bg-surface\/60 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+html.light .bg-surface\/80 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+html.light .bg-background\/80 {
+  background-color: rgba(248, 250, 252, 0.8) !important;
+}
+
+html.light .bg-background\/95 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+}
+
+html.light .text-background {
+  color: #FFFFFF !important;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -25,6 +83,7 @@ body {
   color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 ::selection {
