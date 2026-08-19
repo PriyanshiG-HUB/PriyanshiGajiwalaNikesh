@@ -1,6 +1,7 @@
 import { lazy, Suspense, type ComponentType } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from '@/components/layout/Layout'
+import Tasks from "../pages/Tasks";
 
 const Home = lazy(() => import('@/pages/Home'))
 const About = lazy(() => import('@/pages/About'))
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       { path: 'contact', element: withSuspense(Contact) },
       { path: 'not-found', element: withSuspense(NotFound) },
       { path: '*', element: withSuspense(NotFound) },
+      {
+  path: "/tasks",
+  element: <Tasks />,
+},
     ],
   },
 ])

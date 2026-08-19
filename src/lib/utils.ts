@@ -40,4 +40,8 @@ export const navLinks = [
   { name: 'Resume', path: '/resume' },
   { name: 'Blog', path: '/blog' },
   { name: 'Contact', path: '/contact' },
+  {
+  name: "Tasks",
+  path: "/tasks",
+},
 ]
